@@ -1,337 +1,330 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inpentory - Privacy Policy</title>
-    <meta name="description" content="Inpentory 筆記用具コレクション管理アプリのプライバシーポリシー">
+    <meta
+      name="description"
+      content="Inpentory 万年筆コレクション管理アプリのプライバシーポリシー"
+    />
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --background-color: #f8f9fa;
-            --text-color: #2c3e50;
-            --border-color: #ecf0f1;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+          system-ui, sans-serif;
+        line-height: 1.6;
+        color: white;
+        background: black;
+      }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background: var(--background-color);
-        }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        min-height: 100vh;
+      }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            min-height: 100vh;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
+      /* Header */
+      .header {
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
 
-        .header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+      .app-icon {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
 
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 20px;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em;
-        }
+      .app-name {
+        font-size: 2.5em;
+        font-weight: 300;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
 
+      .app-subtitle {
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 300;
+      }
+
+      /* Navigation */
+      .nav {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: sticky;
+        top: 0;
+        background: black;
+        z-index: 100;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav a {
+        display: block;
+        padding: 20px 24px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+        transition: color 0.3s ease;
+        border-bottom: 2px solid transparent;
+      }
+
+      .nav a:hover,
+      .nav a.active {
+        color: white;
+        border-bottom-color: white;
+      }
+
+      /* Content */
+      .content {
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      h2 {
+        font-size: 1.4em;
+        margin: 40px 0 20px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        margin: 24px 0 12px 0;
+        font-weight: 500;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.7;
+      }
+
+      /* Simple cards */
+      .info-box {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 24px;
+        margin: 24px 0;
+      }
+
+      .info-box h3 {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .info-box p {
+        margin-bottom: 0;
+      }
+
+      /* Lists */
+      ul {
+        margin: 20px 0;
+      }
+
+      li {
+        list-style: none;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.8);
+        position: relative;
+        padding-left: 20px;
+      }
+
+      li::before {
+        content: "•";
+        color: white;
+        position: absolute;
+        left: 0;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      /* Contact section */
+      .contact-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 32px;
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .contact-email {
+        display: inline-block;
+        padding: 12px 24px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        margin-top: 16px;
+        transition: opacity 0.3s ease;
+      }
+
+      .contact-email:hover {
+        opacity: 0.8;
+      }
+
+      /* Last updated */
+      .last-updated {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 0.9em;
+        margin-bottom: 24px;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: rgba(255, 255, 255, 0.6);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 40px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
         .app-name {
-            font-size: 3em;
-            font-weight: 300;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+          font-size: 2em;
         }
-
-        .app-subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-            font-weight: 300;
-        }
-
-        .nav {
-            background: white;
-            padding: 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .nav a {
-            display: inline-block;
-            padding: 20px 30px;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border-bottom: 3px solid transparent;
-            position: relative;
-        }
-
-        .nav a:hover,
-        .nav a.active {
-            color: var(--accent-color);
-            border-bottom-color: var(--accent-color);
-        }
-
         .content {
-            padding: 50px 40px;
+          padding: 30px 16px;
         }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: 300;
+        .nav a {
+          padding: 16px 20px;
+          font-size: 0.9em;
         }
-
-        h2 {
-            color: var(--primary-color);
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            font-weight: 500;
-            font-size: 1.5em;
+        .nav-container {
+          flex-wrap: wrap;
         }
-
-        .last-updated {
-            background: linear-gradient(135deg, #74b9ff, #0984e3);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 30px 0;
-            text-align: center;
-            font-weight: 500;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, #00b894, #00a085);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0, 184, 148, 0.3);
-        }
-
-        .highlight-box h3 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .warning-box {
-            background: linear-gradient(135deg, #fd79a8, #e84393);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-        }
-
-        ul {
-            padding-left: 0;
-            margin: 20px 0;
-        }
-
-        li {
-            list-style: none;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
-            position: relative;
-            padding-left: 40px;
-            transition: all 0.3s ease;
-        }
-
-        li:hover {
-            background: rgba(52, 152, 219, 0.05);
-            padding-left: 50px;
-        }
-
-        li::before {
-            content: "✓";
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2em;
-            position: absolute;
-            left: 10px;
-            top: 15px;
-        }
-
-        .contact-section {
-            background: var(--background-color);
-            padding: 40px;
-            border-radius: 15px;
-            margin-top: 50px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-
-        .contact-email {
-            font-size: 1.3em;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 15px 30px;
-            border: 2px solid var(--accent-color);
-            border-radius: 50px;
-            display: inline-block;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .contact-email:hover {
-            background: var(--accent-color);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-        }
-
-        .footer {
-            text-align: center;
-            padding: 40px;
-            color: #7f8c8d;
-            border-top: 1px solid var(--border-color);
-            margin-top: 60px;
-            background: var(--background-color);
-        }
-
-        .section-icon {
-            display: inline-block;
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-
-        @media (max-width: 768px) {
-            .app-name { 
-                font-size: 2.2em; 
-                letter-spacing: 1px;
-            }
-            .content { 
-                padding: 30px 20px; 
-            }
-            .nav a { 
-                padding: 15px 20px; 
-                font-size: 0.9em;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            .contact-email {
-                font-size: 1.1em;
-                padding: 12px 25px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="app-icon">🖋️</div>
-            <h1 class="app-name">Inpentory</h1>
-            <p class="app-subtitle">筆記用具コレクション管理アプリ</p>
+      <div class="header">
+        <div class="app-icon">🖋️</div>
+        <h1 class="app-name">Inpentory</h1>
+        <p class="app-subtitle">万年筆コレクション管理アプリ</p>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-container">
+          <a href="index.html" class="active">🔒 プライバシーポリシー</a>
+          <a href="terms.html">📋 利用規約</a>
+          <a href="support.html">💬 サポート</a>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h1>🔒 プライバシーポリシー</h1>
+
+        <div class="last-updated">📅 最終更新日：2025年8月8日</div>
+
+        <div class="info-box">
+          <h3>🛡️ あなたのプライバシーを最優先に</h3>
+          <p>
+            <strong>Inpentory</strong
+            >は、お客様のプライバシーを最大限に尊重します。すべてのデータはお客様のデバイス内にのみ保存され、外部に送信されることは一切ありません。
+          </p>
         </div>
 
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="active">🔒 プライバシーポリシー</a>
-                <a href="terms.html">📋 利用規約</a>
-                <a href="support.html">💬 サポート</a>
-            </div>
-        </nav>
+        <h2>📱 1. アクセスする情報</h2>
+        <p>
+          Inpentoryは、アプリの機能を提供するために以下の情報にアクセスする場合があります：
+        </p>
+        <ul>
+          <li>
+            <strong>📸 写真ライブラリ</strong> -
+            万年筆、インク、ノート、筆記サンプルの写真を保存するためにアクセスします。お客様が選択された写真のみがアプリに保存され、ライブラリ全体にアクセスすることはありません。
+          </li>
+          <li>
+            <strong>📷 カメラ</strong> -
+            アプリ内での写真撮影機能を提供するためにアクセスします。撮影された写真は直接アプリ内に保存され、他の場所に送信されることはありません。
+          </li>
+        </ul>
 
-        <div class="content">
-            <h1><span class="section-icon">🔒</span>プライバシーポリシー</h1>
-            
-            <div class="last-updated">
-                📅 最終更新日：2025年8月8日
-            </div>
+        <h2>🎯 2. 情報の使用目的</h2>
+        <p>アクセスした情報は、以下の目的でのみ使用されます：</p>
+        <ul>
+          <li>万年筆、インク、ノートのコレクション管理機能の提供</li>
+          <li>筆記サンプルの記録と保存機能の提供</li>
+          <li>出会いの記録機能の提供</li>
+          <li>アプリの基本機能と使いやすさの向上</li>
+        </ul>
 
-            <div class="highlight-box">
-                <h3>🛡️ あなたのプライバシーを最優先に</h3>
-                <p><strong>Inpentory</strong>は、お客様のプライバシーを最大限に尊重します。すべてのデータはお客様のデバイス内にのみ保存され、外部に送信されることは一切ありません。</p>
-            </div>
-
-            <h2><span class="section-icon">📱</span>1. アクセスする情報</h2>
-            <p>Inpentoryは、アプリの機能を提供するために以下の情報にアクセスする場合があります：</p>
-            <ul>
-                <li><strong>📸 写真ライブラリ</strong><br>
-                万年筆、インク、ノート、筆記サンプルの写真を保存するためにアクセスします。お客様が選択された写真のみがアプリに保存され、ライブラリ全体にアクセスすることはありません。</li>
-                
-                <li><strong>📷 カメラ</strong><br>
-                アプリ内での写真撮影機能を提供するためにアクセスします。撮影された写真は直接アプリ内に保存され、他の場所に送信されることはありません。</li>
-            </ul>
-
-            <h2><span class="section-icon">🎯</span>2. 情報の使用目的</h2>
-            <p>アクセスした情報は、以下の目的でのみ使用されます：</p>
-            <ul>
-                <li>万年筆、インク、ノートのコレクション管理機能の提供</li>
-                <li>筆記サンプルの記録と保存機能の提供</li>
-                <li>出会いの記録機能の提供</li>
-                <li>アプリの基本機能と使いやすさの向上</li>
-            </ul>
-
-            <h2><span class="section-icon">🔐</span>3. データの保存と管理</h2>
-            <div class="highlight-box">
-                <ul style="color: white; margin: 0;">
-                    <li style="border: none; color: white;">すべてのデータはお客様のデバイス内にのみ保存</li>
-                    <li style="border: none; color: white;">外部サーバーへのデータ送信は一切なし</li>
-                    <li style="border: none; color: white;">第三者とのデータ共有は一切なし</li>
-                    <li style="border: none; color: white;">個人を特定する情報の収集は一切なし</li>
-                    <li style="border: none; color: white;">データ解析・追跡は一切なし</li>
-                </ul>
-            </div>
-
-            <h2><span class="section-icon">☁️</span>4. iCloudとの同期</h2>
-            <p>お客様がデバイスでiCloud同期を有効にしている場合、アプリのデータはAppleのiCloudサービスを通じてお客様の他のデバイスと同期される場合があります。この処理は、Appleのプライバシーポリシーと利用規約に従って安全に行われます。</p>
-
-            <h2><span class="section-icon">🗑️</span>5. データの削除</h2>
-            <p>アプリをデバイスから削除することで、保存されたすべてのデータが完全に削除されます。iCloudに同期されたデータについては、iCloud設定から削除できます。</p>
-
-            <h2><span class="section-icon">📝</span>6. プライバシーポリシーの変更</h2>
-            <p>本プライバシーポリシーに重要な変更を行う場合は、このページを更新し、アプリ内でも適切にお知らせいたします。継続的にこのページをご確認いただくことをお勧めします。</p>
-
-            <div class="contact-section">
-                <h2><span class="section-icon">💬</span>7. お問い合わせ</h2>
-                <p>プライバシーポリシーに関するご質問、ご不明な点、またはアプリに関するお問い合わせがございましたら、以下までお気軽にご連絡ください：</p>
-                <a href="mailto:contact.inpentory@gmail.com" class="contact-email">
-                    📧 contact.inpentory@gmail.com
-                </a>
-            </div>
+        <h2>🔐 3. データの保存と管理</h2>
+        <div class="info-box">
+          <ul>
+            <li>すべてのデータはお客様のデバイス内にのみ保存</li>
+            <li>外部サーバーへのデータ送信は一切なし</li>
+            <li>第三者とのデータ共有は一切なし</li>
+            <li>個人を特定する情報の収集は一切なし</li>
+            <li>データ解析・追跡は一切なし</li>
+          </ul>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2025 Inpentory. All rights reserved. Made with ❤️ for stationery enthusiasts.</p>
+        <h2>☁️ 4. iCloudとの同期</h2>
+        <p>
+          お客様がデバイスでiCloud同期を有効にしている場合、アプリのデータはAppleのiCloudサービスを通じてお客様の他のデバイスと同期される場合があります。この処理は、Appleのプライバシーポリシーと利用規約に従って安全に行われます。
+        </p>
+
+        <h2>🗑️ 5. データの削除</h2>
+        <p>
+          アプリをデバイスから削除することで、保存されたすべてのデータが完全に削除されます。iCloudに同期されたデータについては、iCloud設定から削除できます。
+        </p>
+
+        <h2>📝 6. プライバシーポリシーの変更</h2>
+        <p>
+          本プライバシーポリシーに重要な変更を行う場合は、このページを更新し、アプリ内でも適切にお知らせいたします。継続的にこのページをご確認いただくことをお勧めします。
+        </p>
+
+        <div class="contact-section">
+          <h2>💬 7. お問い合わせ</h2>
+          <p>
+            プライバシーポリシーに関するご質問、ご不明な点、またはアプリに関するお問い合わせがございましたら、以下までお気軽にご連絡ください：
+          </p>
+          <a href="mailto:contact.inpentory@gmail.com" class="contact-email">
+            📧 contact.inpentory@gmail.com
+          </a>
         </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          &copy; 2025 Inpentory. All rights reserved. Made with ❤️ for fountain
+          pen enthusiasts.
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
